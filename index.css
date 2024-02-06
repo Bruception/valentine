@@ -1,0 +1,52 @@
+body {
+    background-color: #FFBDD3;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.body-love {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="0" y="75" font-family="Arial" font-size="75">❤️</text></svg>');
+    background-size: 75px;
+    background-repeat: repeat;
+}
+
+.body-sad {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="0" y="75" font-family="Arial" font-size="75">💔</text></svg>');
+    background-size: 75px;
+    background-repeat: repeat;
+}
+
+#card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    min-height: 350px;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+h1 {
+    color: #e44d26;
+}
+
+button {
+    background-color: #e44d26;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#yes {
+    background-color: #009F4E;
+}
