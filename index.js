@@ -49,7 +49,7 @@ const main = () => {
     };
 
     yesButton.addEventListener('click', () => {
-        yesClickCount++;
+        ++yesClickCount;
         if (yesClickCount < phases.length) {
             updateQuestion();
         }
