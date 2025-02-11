@@ -5,34 +5,29 @@ const main = () => {
         {
             question: 'Will you be my valentine?',
             yesText: 'Yes',
-            kittyImage: './assets/kitty.gif',
+            image: './assets/avocado.gif',
         },
         {
             question: 'Really?',
             yesText: 'Yes!',
-            kittyImage: './assets/kitty-blush.gif',
+            image: './assets/dancing.gif',
         },
         {
             question: 'Are you sure?',
             yesText: 'Yes!!',
-            kittyImage: './assets/kitty-love.gif',
-        },
-        {
-            question: 'Do you love me?',
-            yesText: 'YES!!!',
-            kittyImage: './assets/kitty-question.gif',
+            image: './assets/hoolah.gif',
         },
         {
             terminalPhase: true,
-            question: 'I love you!',
-            kittyImage: './assets/kitty-love-you.gif',
+            question: 'Ripe Choice!',
+            image: './assets/win.gif',
         },
     ];
 
     const question = document.getElementById('question');
     const yesButton = document.getElementById('yes');
     const noButton = document.getElementById('no');
-    const kittyImage = document.getElementById('kitty-image');
+    const image = document.getElementById('image');
     const [body] = document.getElementsByClassName('body-love');
 
     const updateQuestion = () => {
@@ -40,7 +35,7 @@ const main = () => {
 
         question.innerText = phase.question;
         yesButton.innerText = phase.yesText;
-        kittyImage.src = phase.kittyImage;
+        image.src = phase.image;
 
         if (phase.terminalPhase) {
             yesButton.style.display = 'none';
@@ -56,12 +51,12 @@ const main = () => {
     });
 
     noButton.addEventListener('click', () => {
-        question.innerText = 'oh... ok :(';
+        question.innerText = 'oh...';
         yesButton.style.display = 'none';
         noButton.style.display = 'none';
         body.removeAttribute('class', 'body-love');
         body.setAttribute('class', 'body-sad');
-        kittyImage.src = './assets/kitty-sad.gif';
+        image.src = './assets/sad.gif';
     });
 };
 

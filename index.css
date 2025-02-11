@@ -1,52 +1,66 @@
 body {
-    background-color: #FFBDD3;
-    font-family: 'Arial', sans-serif;
+    background-color: #bdffc7;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
     text-align: center;
 }
 
 .body-love {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="0" y="75" font-family="Arial" font-size="75">❤️</text></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="0" y="75" font-family="Arial" font-size="75">🥑</text></svg>');
     background-size: 75px;
     background-repeat: repeat;
 }
 
 .body-sad {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="0" y="75" font-family="Arial" font-size="75">💔</text></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="0" y="75" font-family="Arial" font-size="75">😢</text></svg>');
     background-size: 75px;
     background-repeat: repeat;
 }
 
 #card {
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 400px;
-    min-height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    max-width: 420px;
+    min-height: 380px;
     margin: auto;
     position: relative;
     top: 50%;
     transform: translateY(50%);
+    border: 3px solid #FFB6C1;
 }
 
 h1 {
-    color: #e44d26;
+    color: #ff5e78;
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
 }
 
 button {
-    background-color: #e44d26;
+    background-color: #ff90bc;
     border: none;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 18px;
+    margin: 6px 3px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff70a6;
+    transform: scale(1.05);
 }
 
 #yes {
-    background-color: #009F4E;
+    background-color: #6AD47C;
+}
+
+#yes:hover {
+    background-color: #58b76a;
 }
